@@ -2,7 +2,7 @@ A terminal based tetris written in only bash.
 
 To play without downloading:  
 ```
-curl -fsSL https://raw.githubusercontent.com/benny-e/bash-tetris/main/tetris.sh | bash
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/benny-e/bash-tetris/main/tetris.sh)"
 ```
 or clone the repository and download  
 ```
