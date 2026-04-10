@@ -1,4 +1,4 @@
-A terminal based tetris written in only bash.  
+## A terminal based tetris written in only bash.  
 
 <p align="center">
   <img src="screenshot.png" alt="Tetris screenshot" width="700"/>
