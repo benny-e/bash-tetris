@@ -152,30 +152,6 @@ check_terminal_size() {
     fi
 }
 
-
-check_terminal_size() {
-    local min_cols=$((BOARD_WIDTH * 2 + 16))
-    local min_rows=$((BOARD_HEIGHT + 10))
-
-    local cols
-    local rows
-    cols=$(tput cols)
-    rows=$(tput lines)
-
-    if (( cols < min_cols || rows < min_rows )); then
-        clear
-        echo
-        echo "  Terminal too small!"
-        echo
-        echo "  Required: at least ${min_cols}x${min_rows}"
-        echo "  Current:  ${cols}x${rows}"
-        echo
-        echo "  Resize your terminal and try again."
-        echo
-        exit 1
-    fi
-}
-
 can_place() {
     local x=$1 y=$2 piece_type=$3 rotation=$4
     local blocks=$(get_piece_blocks $piece_type $rotation)

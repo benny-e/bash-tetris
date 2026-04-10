@@ -1,5 +1,9 @@
 A terminal based tetris written in only bash.  
 
+<p align="center">
+  <img src="screenshot.png" alt="Tetris screenshot" width="700"/>
+</p>
+
 To play without downloading:  
 ```
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/benny-e/bash-tetris/main/tetris.sh)"
